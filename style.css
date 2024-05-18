@@ -11,7 +11,9 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-color: #333; */
 }
-
+::selection{
+  background-color: #0b372dbb;
+}
 .logo {
   width: 100px;
 }
@@ -104,8 +106,9 @@ main {
   overflow: hidden;
 }
 
-.parallex{
+.parallax{
   pointer-events: none;
+  transform: translate(-50%, -50%);
   
 }
 .bg-img {
@@ -113,7 +116,6 @@ main {
   width: 2800px;
   top: calc(50% - 390px);
   left: calc(50% + 10px);
-  transform: translate(-50%, -50%);
   z-index: 1;
 }
 .fog_7 {
@@ -122,7 +124,6 @@ main {
   width: 1900;
   top: calc(50%-100px);
   left: calc(50%+300px);
-  transform: translate(-50%, -50%);
 }
 .mountain_10 {
   position: absolute;
@@ -130,7 +131,6 @@ main {
   width: 892px;
   top: calc(50% + 69px);
   left: calc(50% + 230px);
-  transform: translate(-50%, -50%);
 }
 .fog_6 {
   position: absolute;
@@ -138,7 +138,6 @@ main {
   width: 1610px;
   top: calc(50% + 85px);
   left: calc(50% + 10px);
-  transform: translate(-50%, -50%);
 }
 .mountain_9 {
   position: absolute;
@@ -146,7 +145,6 @@ main {
   width: 470px;
   top: calc(50% + 113px);
   left: calc(50% - 457px);
-  transform: translate(-50%, -50%);
 }
 .mountain_8 {
   position: absolute;
@@ -154,7 +152,6 @@ main {
   width: 810px;
   top: calc(50% + 69px);
   left: calc(50% - 202px);
-  transform: translate(-50%, -50%);
 }
 .fog_5 {
   position: absolute;
@@ -162,7 +159,6 @@ main {
   width: 450px;
   top: calc(50% + 160px);
   left: calc(50% + 20px);
-  transform: translate(-50%, -50%);
 }
 .mountain_7 {
   position: absolute;
@@ -170,7 +166,6 @@ main {
   width: 538px;
   top: calc(50% + 132px);
   left: calc(50% + 305px);
-  transform: translate(-50%, -50%);
 }
 
 .text {
@@ -178,10 +173,10 @@ main {
   z-index: 9;
   top: calc(50% - 130px);
   left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  pointer-events: auto;
 }
 .text h2 {
   font-weight: 100;
@@ -204,7 +199,6 @@ main {
   width: 408px;
   top: calc(50% + 60px);
   left: calc(50% + 590px);
-  transform: translate(-50%, -50%);
 }
 
 .fog_4 {
@@ -213,7 +207,6 @@ main {
   width: 590px;
   top: calc(50% + 223px);
   left: calc(50% - 60px);
-  transform: translate(-50%, -50%);
 }
 
 .mountain_5 {
@@ -222,7 +215,6 @@ main {
   width: 625px;
   top: calc(50% + 250px);
   left: calc(50% + 130px);
-  transform: translate(-50%, -50%);
 }
 .fog_5 {
   position: absolute;
@@ -230,7 +222,6 @@ main {
   width: 1600px;
   top: calc(50% + 110px);
   left: calc(50% - 15px);
-  transform: translate(-50%, -50%);
 }
 .mountain_4 {
   position: absolute;
@@ -238,7 +229,6 @@ main {
   width: 780px;
   top: calc(50% + 196px);
   left: calc(50% - 381.5px);
-  transform: translate(-50%, -50%);
 }
 .mountain_3 {
   position: absolute;
@@ -246,7 +236,6 @@ main {
   width: 530px;
   top: calc(50% - 17px);
   left: calc(50% + 601px);
-  transform: translate(-50%, -50%);
 }
 
 .fog_2 {
@@ -255,7 +244,6 @@ main {
   width: 1560px;
   top: calc(50% + 147px);
   left: calc(50% - 30px);
-  transform: translate(-50%, -50%);
 }
 
 .mountain_2 {
@@ -264,7 +252,6 @@ main {
   width: 690px;
   top: calc(50% + 154px);
   left: calc(50% + 412px);
-  transform: translate(-50%, -50%);
 }
 
 .mountain_1 {
@@ -273,7 +260,6 @@ main {
   width: 530px;
   top: calc(50% + 17px);
   left: calc(50% - 601px);
-  transform: translate(-50%, -50%);
 }
 
 .sun_rays {
@@ -282,6 +268,8 @@ main {
   top: 0;
   right: 0;
   width: 595px;
+  pointer-events: none;
+
 }
 
 .black_shadow {
@@ -290,6 +278,7 @@ main {
   bottom: 0;
   right: 0;
   width: 100%;
+  pointer-events: none;
 }
 
 .fog_1 {
@@ -298,7 +287,6 @@ main {
   width: 1600;
   top: calc(100% - 335px);
   left: calc(50% - 30px);
-  transform: translate(-50%, -50%);
 }
 .vignette {
   position: absolute;
@@ -312,5 +300,6 @@ main {
     ellipse at center,
     rgba(0, 0, 0, 0) 65%,
     rgba(0, 0, 0, 0.7)
-  )
+  );
+  pointer-events: none;
 }
