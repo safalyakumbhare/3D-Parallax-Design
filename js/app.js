@@ -56,13 +56,24 @@ Array.from(parallax_el)
     );
   });
 
-timeline.from(
-  ".text h1",
-  {
-    y:
-      window.innerHeight -
-      document.querySelector(".text h1").getBoundingClientRect().top+200,
-    duration: 2,
-  },
-  "2.5"
-);
+timeline
+  .from(
+    ".text h1",
+    {
+      y:
+        window.innerHeight -
+        document.querySelector(".text h1").getBoundingClientRect().top +
+        200,
+      duration: 2,
+    },
+    "2.5"
+  )
+  .from(
+    ".text h2",
+    {
+      y: -150,
+      opacity: 0,
+      duration: 1.5,
+    },
+    "3"
+  );
